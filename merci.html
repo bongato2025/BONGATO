@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Merci pour votre commande</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: 'Bubblegum Sans', cursive;
+      color: #e6b7c6; /* rose poudré */
+      background-color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('logo.jpg') no-repeat center center;
+      background-size: cover;
+      filter: blur(8px);
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .message {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #f45094;
+      text-decoration: none;
+      font-size: 1.1em;
+      border: 2px solid #f45094;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background-color: #fff0f5;
+    }
+
+    a:hover {
+      background-color: #ffe4ec;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>Merci pour votre confiance !</h1>
+    <p>Nous vous tiendrons au courant de votre devis dans le plus bref délai.</p>
+    <h2>BONGÂTO, la douceur qui fait fondre le cœur 🍰</h2>
+  </div>
+</body>
+</html>
